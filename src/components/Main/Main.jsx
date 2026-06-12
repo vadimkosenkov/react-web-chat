@@ -5,7 +5,7 @@ import FreeScrollBar from "react-free-scrollbar";
 
 const SOCKET_URL = window.location.hostname === "localhost" 
   ? "http://localhost:3001" 
-  : "https://chat-its.herokuapp.com";
+  : "https://node-web-chat-server.onrender.com";
 
 const socket = io(SOCKET_URL, {
   transports: ["websocket", "polling"],
