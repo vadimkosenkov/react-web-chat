@@ -1,0 +1,111 @@
+.contain {
+  background-color: #282c34;
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 30px;
+}
+.header {
+  font-size: 28px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+  &__title {
+    width: 80%;
+  }
+  &__online {
+    width: 20%;
+    padding: 0 20px;
+    color: whitesmoke;
+  }
+}
+
+.wrap {
+  display: flex;
+  height: 85vh;
+}
+.messages {
+  width: 80%;
+  overflow: hidden;
+}
+
+.users {
+  min-width: 20%;
+  padding: 0 20px;
+  overflow: hidden;
+  ul {
+    padding: 0;
+  }
+  ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    color: #6667ab;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: lowercase;
+    overflow: hidden;
+  }
+}
+.content {
+  width: 100%;
+  padding-right: 1rem;
+  &__text-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__user-name {
+    color: whitesmoke;
+    text-transform: lowercase;
+  }
+  &__user-message {
+    margin: 0 10px;
+    word-break: break-all;
+  }
+  &__user-notification {
+    color: rgba(193, 193, 193, 0.5);
+    text-transform: lowercase;
+  }
+}
+
+.user-input {
+  width: 100%;
+  background-color: #282c34;
+  outline: none;
+  border: none;
+  padding-right: 2rem;
+}
+
+.FreeScrollbar {
+  &-container {
+    &::-webkit-scrollbar {
+      display: none !important;
+      width: 0 !important;
+      height: 0 !important;
+    }
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+
+    inset: 0 0 0 0 !important;
+    overflow-y: scroll !important;
+    overflow-x: hidden !important;
+  }
+
+  &-vertical-track {
+    background-color: transparent !important;
+    border: none !important;
+    width: 8px !important;
+  }
+
+  &-vertical-handler {
+    background-color: rgba(193, 193, 193, 0.5) !important;
+    border-radius: 4px !important;
+    transition: background-color 0.2s ease !important;
+
+    &:hover {
+      background-color: rgba(193, 193, 193, 0.8) !important;
+    }
+  }
+
+  &-horizontal-track {
+    display: none !important;
+  }
+}
