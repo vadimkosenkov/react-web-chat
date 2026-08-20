@@ -2,6 +2,15 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+🔗 Live Demo: https://react-web-chat-8c5c51.netlify.app/
+
+🔗 Repository: https://github.com/vadimkosenkov/react-web-chat
+
+# Preview
+## 📸 Preview
+![WebChat Preview](https://github.com/user-attachments/assets/e062ddce-5fcb-4e4d-b1a2-2990b9b9e289)
+
+
 ## Available Scripts
 
 In the project directory, you can run:
