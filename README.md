@@ -1,79 +1,69 @@
-# Getting Started with Create React App
+# 💬 React Web Chat
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A real-time chat application built with React and Socket.IO. Pick a nickname, join the room, and chat with everyone currently online — see who's connected, exchange messages instantly, and get notified as users join or leave.
 
 🔗 Live Demo: https://react-web-chat-8c5c51.netlify.app/
 
 🔗 Repository: https://github.com/vadimkosenkov/react-web-chat
 
-# Preview
-## 📸 Preview
+🔗 Backend: https://github.com/vadimkosenkov/node-web-chat-server
+
 ![WebChat Preview](https://github.com/user-attachments/assets/e062ddce-5fcb-4e4d-b1a2-2990b9b9e289)
 
+---
 
-## Available Scripts
+## 🚀 Key Features
 
-In the project directory, you can run:
+- Nickname-based entry with input validation (required, up to 16 characters) — no password, no signup.
+- Real-time messaging over WebSockets via Socket.IO, with automatic fallback to polling.
+- Live online users list, updated instantly as people connect and disconnect.
+- System notifications in the chat feed when users join or leave.
+- Auto-scroll to the latest message.
+- Custom scrollbars for the message and user list panes.
+- Client-side routing with protected access to the chat screen (redirects to the nickname screen if not authenticated).
+- Fully responsive layout built with React Bootstrap and SCSS.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Frontend
+- React 18
+- React Router
+- React Bootstrap
+- Socket.IO Client
+- Sass / SCSS
+- react-free-scrollbar
 
-### `npm test`
+### Backend
+- Node.js
+- Socket.IO
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## ⚙️ Quick Start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 1. Clone the repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/vadimkosenkov/react-web-chat.git
+cd react-web-chat
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 2. Install dependencies
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 3. Start the development server
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The application will be available at:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+http://localhost:3000
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+By default the client connects to the deployed backend.
